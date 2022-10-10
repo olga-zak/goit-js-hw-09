@@ -12,6 +12,15 @@ const stopBtnRef = document.querySelector('[data-stop]');
 const bodyRef = document.querySelector('body');
 let bodyColorChangerId = null;
 
+startBtnRef.setAttribute(
+  'style',
+  'border-radius:4px; border-color: green; background-color: green;'
+);
+stopBtnRef.setAttribute(
+  'style',
+  'border-radius:4px; border-color: red; background-color: red;'
+);
+
 startBtnRef.addEventListener('click', onStartClick);
 function onStartClick(event) {
   bodyColorChangerId = setInterval(() => {
