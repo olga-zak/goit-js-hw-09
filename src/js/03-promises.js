@@ -39,6 +39,7 @@ function onFormSubmit(event) {
     position += 1;
     delay += Number(dataFromInputs.step);
   }
+  event.target.reset();
 }
 
 function createPromise(position, delay) {
